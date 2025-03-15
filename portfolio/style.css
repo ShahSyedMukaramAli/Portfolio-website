@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(23, 2, 78);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.section-title h1:before {
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 2px;
+  right: 0px;
+  background-color: #febd01;
+  bottom: 0px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* Header */
+
+
+/* Home */
+.home {
+  min-height: 100vh;
+  background-image: url(images/smqtry1.JPG);
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+
+.home .row{
+  min-height: 100vh;
+}
+
+.home .home-content{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .home-content .block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  border-left: 5px solid rgb(230, 30, 30);
+  margin-top: 50px;
+}
+
+.home .home-content .block h6 {
+  color: rgb(235, 22, 22);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.home .home-content .block h1 {
+  color: rgb(224, 23, 23);
+  font-size: 43px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.home .home-content .block .my {
+  margin-top: 20px;
+  
+  margin-left: 0;
+}
+
+.home .home-content .block h3 {
+  color: rgb(218, 23, 23);
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+
+        }
+        .firstSection > div{
+            width: 30%;
+            
+        }
+        .leftSection{
+            font-size: 3rem;
+            margin: 30px 0;
+        
+        }
+        .rightSection img{
+            width: 100%;
+           
+        }
+        .purple{
+            color: blueviolet;
+        }
+        #element {
+            color: blueviolet;
+        }
+
+
+/* Footer */
+
+footer {
+  padding: 70px 15px;
+  background-color: #0c0c17;
+}
+
+footer .logo .sm1 {
+  color: #febd01;
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+
+footer .logo .q1 {
+  color: red;
+  letter-spacing: 5px;
+  font-size: 55px;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-weight: 900;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer .social a {
+  color: #999999;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all .5s ease;
+  font-size: 20px;
+}
+
+footer .social a:hover {
+  color: magenta;
+}
+
+/* Copyright */
+
+.copyright {
+  background-color: #0c0c17;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.ham-burger .fa {
+  font-size: 20px;
+  height: 30px;
+  width: 35px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  border: 1px solid #eeeeee;
+}
+
+
+
+@media (max-width: 991px){
+  .home {
+    background-image: url(images/smqtry2.JPG);
+  }
+}
+
+@media (max-width: 767px) {
+	
+	.firstSection{
+                    flex-direction: column-reverse;
+                }
+                .leftSection{
+                    width:80% !important;
+					margin:10%;
+                    display:flex ;
+                    flex-direction: column;
+                    justify-self: center;
+                    align-items:center ;
+                }
+                .rightSection{
+                    width: 301px !important;
+                }
+				
+  
+  .home .home-content .block h6 {
+    font-size: 16px;
+  }
+  .home .home-content .block h1 {
+    font-size: 21px;
+  }
+  .home .home-content .block h3 {
+    font-size: 14px;
+  }
+  header {
+    padding: 15px;
+    position: fixed;
+    background-color: rgb(7, 6, 6);
+    border-bottom: 1px solid #eeeeee;
+  }
+  header .brand-name a {
+    color: black;
+  }
+  .ham-burger .fa {
+    display: inline-block;
+  }
+  .navbar {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .navbar .show {
+    display: block;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: black;
+  }
+  header .navbar ul li a::before {
+    background-color: #febd01;
+  }
+  .cv-btn {
+    width: 190px;
+  }
+  .cv-btn a span{
+    font-size: 12px;
+  }
+}
+
+
+
+/* NavBar */
+
+nav {
+  background-color: #0c0c17;
+}
+
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 70px;
+  padding-left: 60px;
+  letter-spacing: 1px;
+}
+
+.sm {
+  color: #febd01;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 70px;
+}
+
+.q {
+  color: red;
+  font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 70px;
+}
+
+nav .nav-links {
+  float: right;
+  list-style: none;
+  padding-right: 40px;
+  position: relative;
+}
+
+nav .nav-links li {
+  display: inline-block;
+  margin: 0 5px;
+  background-color: #0c0c17;
+}
+
+nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  line-height: 75px;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: all .5s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #febd01,
+              0 0 12px #ffd700;
+  text-shadow: 0 0 2px #febd01, 0 0 2px #ffd700;
+}
+
+.show, .icon, .nav-input {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 75px;
+    cursor: pointer;
+  }
+
+  .show:hover {
+    color: gold;
+    box-shadow: 0 0 12px #febd01,
+              0 0 12px #ffd700;
+    text-shadow: 0 0 2px #febd01, 0 0 2px #ffd700;
+  }
+
+  .icon {
+    display: block;
+    color: gold;
+    position: absolute;
+    right: 40px;
+    line-height: 75px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .icon .fa {
+    color: gold;
+  }
+
+  nav ul li a:hover {
+    box-shadow: 0 0 12px #febd01,
+              0 0 12px #ffd700;
+  }
+
+  .show + a, .nav-links {
+    display: none;
+  }
+
+  [id^=btn]:checked + ul {
+    display: block;
+  }
+}
